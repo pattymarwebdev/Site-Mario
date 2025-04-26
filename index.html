@@ -31,6 +31,7 @@
         Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos
         - Mario e Luigi!
       </p>
+      
       <button onclick="cliqueiNoBotao()">Fale conosco</button>
     </div>
 
@@ -42,24 +43,12 @@
         <input placeholder="Seu nome" type="text" name="nome">
         <input placeholder="Seu telefone" type="tel" name="telefone">
         <textarea placeholder="Digite seu problema aqui" name="info"></textarea>
-        <button type= "submit"sumirFormulario()">Enviar formulário</button>
+
+        <button type= "submit" onclick="sumirFormulario()">Enviar formulário</button>
         </form>
 
         <div class="mascara-form"></div>
+
+        <script src="script.js"></script>
   </body>
-  <script>
-    let formulario = document.querySelector(".fale-conosco")
-    let mascara = document.querySelector(".mascara-form")
-
-
-    function cliqueiNoBotao(){
-        formulario.style.left = "700px"
-        mascara.style.visibility = "visible"
-    }
-
-    function sumirFormulario(){
-        formulario.style.left = "-320px"
-        mascara.style.visibility = "hidden"
-    }
-  </script>
 </html>
